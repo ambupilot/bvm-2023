@@ -1,0 +1,28 @@
+#verwijder trailing slash
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ $1 [R=301,L]
+
+#verwijder .php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#verwijder .html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+#http to https
+    
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}
+
+#non-www naar www
+    
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#niet bestaande pagina's naar 404 pagina   
+#ErrorDocument 404 /

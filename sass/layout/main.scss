@@ -1,0 +1,228 @@
+.mk-wit {
+    color: #fff;
+}
+
+.mk-topbar {
+    border-bottom: 2px solid $color-white;
+}
+.mk-menu {
+    color: #fff;
+
+    &__text {
+        letter-spacing: 2px;
+        color: #fff;
+        padding-left: 10px;
+    }
+}
+.mk-font-lato {
+    font-family: 'Lato', sans-serif;
+    &-300 {
+        font-weight: 300;
+    }
+    &-700 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+.mk-font-raleway {
+    font-family: 'Raleway', sans-serif;
+    &-100 {
+        font-weight: 100;
+    }
+    &-200 {
+        font-weight: 200;
+    }
+    &-300 {
+        font-weight: 300;
+    }
+    &-400 {
+        font-weight: 300;
+    }
+    &-600 {
+        font-weight: 300;
+    }
+
+}
+
+
+
+.mk {
+    color: #fff;
+    &__h1 {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+    }
+    &__h2 {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+    }
+    &-offcanvas-menu-link {
+        padding-top:20px;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    &-color-primary {
+        color: $color-primary;
+    }
+    &-card-h4 {
+        color: $color-primary;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1.5;
+
+        &-link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+        &:hover,
+        &:active {
+            text-decoration: none;
+            color: $color-primary;
+            cursor: hand;
+        }
+    }
+
+    }
+    &-margin-top {
+        margin-top: 25px;
+    }
+}
+.mk-background-form {
+    background-color: rgba(255, 255, 255, .8);
+}
+.mk-form-input {
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.offcanvas {
+    &__icons {
+        margin-top:2rem;
+        border-top: 1px solid #ccc;
+        padding-top: 2rem;
+        display: inline-block;
+        width:100%;
+    }
+    &__icon-phone {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: #fff;
+    }
+    &__icon-whatsapp {
+        padding-right: 2rem;
+        color: green;
+    }
+    &__icon-fb {
+        padding-right: 2rem;
+        color: blue;
+    }
+    &__mp {
+        width: 50px;
+        //margin-top: 2rem;
+        //margin-bottom: 24px;
+        //display: inline-block;
+    }
+}
+main {
+    min-height: 50vh;
+}
+.footer {
+    //margin-top:25px;
+    color: #fff;
+    min-height: 30vh;
+
+    &__navigation {
+        border-top: 1px solid #ccc;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+    &__list {
+        padding-inline-start: 0;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+    &__link {
+        &:link,
+        &:visited {
+            color: #ccc;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: #fff;
+        }
+    }
+    
+    &__adres {
+        padding-top: 2rem;
+        font-size: 1rem;
+    }
+    &__icons {
+        margin-top:2rem;
+        border-top: 1px solid #ccc;
+        padding-top: 2rem;
+        display: inline-block;
+        width:100%;
+    }
+    &__icon-phone {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: #fff;
+    }
+    &__icon-phone-intro {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: $color-primary;
+    }
+    &__icon-whatsapp {
+        padding-right: 2rem;
+        color: green;
+    }
+    &__icon-fb {
+        padding-right: 2rem;
+        color: blue;
+    }
+    &__mp {
+        width: 50px;
+        margin-bottom: 24px;
+        display: inline-block;
+    }
+    &__copyright {
+        border-top: 1px solid #ccc;
+        font-size: 1rem;
+        padding-top: 2rem;
+        width: 100%;
+        float: right;
+    }
+
+}
+.modal {
+    &__icon-whatsapp {
+        color: green;
+        padding-right: 16px;
+    }
+    &__icon-phone-intro {
+        color: $color-primary;
+        padding-right: 24px;
+    }
+}
+.mk-text-small {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
